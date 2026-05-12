@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_524417ddeb7942ec2a2bce3ae564ba9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    
+                <style>
+                    #float_image_d7054dfb5bdc21dbc7462335489093ec {
+                        position: absolute;
+                        bottom: 75%;
+                        left: 85%;
+                          scale: 0.2;
+                        }
+                </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_524417ddeb7942ec2a2bce3ae564ba9b" ></div>
+        
+    
+            <img id="float_image_d7054dfb5bdc21dbc7462335489093ec" alt="float_image"
+                 src="https://upload.wikimedia.org/wikipedia/commons/8/84/North_Pointer.svg"
+                 style="z-index: 999999">
+            </img>
+            
+</body>
+<script>
+    
+    
+            var map_524417ddeb7942ec2a2bce3ae564ba9b = L.map(
+                "map_524417ddeb7942ec2a2bce3ae564ba9b",
+                {
+                    center: [-3.119, -60.0217],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+
+            
+
+        
+    
+            var tile_layer_40a1821292a3ff710d5f2748396e1515 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_40a1821292a3ff710d5f2748396e1515.addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            tile_layer_40a1821292a3ff710d5f2748396e1515.addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var marker_6c1b29a5a3891678f041ee3e0f063540 = L.marker(
+                [-3.15, -59.9833],
+                {
+}
+            ).addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var beautify_icon_a2776e6c5193e35e12579f3e5f0b0e62 = new L.BeautifyIcon.icon(
+                {
+  "icon": "star",
+  "borderWidth": 3,
+  "borderColor": "transparent",
+  "textColor": "#000",
+  "backgroundColor": "transparent",
+  "innerIconStyle": "color:black;font-size:15px;",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_6c1b29a5a3891678f041ee3e0f063540.setIcon(beautify_icon_a2776e6c5193e35e12579f3e5f0b0e62);
+        
+    
+        var popup_36d2a32d3ebab080c04f3b9a9aa95045 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca95a106e40ade11c7af17400f6e2c22 = $(`<div id="html_ca95a106e40ade11c7af17400f6e2c22" style="width: 100.0%; height: 100.0%;">Airport in the Popup</div>`)[0];
+                popup_36d2a32d3ebab080c04f3b9a9aa95045.setContent(html_ca95a106e40ade11c7af17400f6e2c22);
+            
+        
+
+        marker_6c1b29a5a3891678f041ee3e0f063540.bindPopup(popup_36d2a32d3ebab080c04f3b9a9aa95045)
+        ;
+
+        
+    
+    
+            marker_6c1b29a5a3891678f041ee3e0f063540.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c1b29a5a3891678f041ee3e0f063540.setIcon(beautify_icon_a2776e6c5193e35e12579f3e5f0b0e62);
+            
+    
+            var marker_e934090c8b2ce9643acc710e701737c6 = L.marker(
+                [-3.15, -59.9833],
+                {
+}
+            ).addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var div_icon_b9a439743329d1171244ba3b2669ed8b = L.divIcon({
+  "html": "Airport in the map",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_e934090c8b2ce9643acc710e701737c6.setIcon(div_icon_b9a439743329d1171244ba3b2669ed8b);
+            
+    
+            var tile_layer_e2e4b1e5fc283f0833cf598762781f0b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_0fe284a25d9f3b0179fc2ccd093d7215 = new L.Control.MiniMap(
+                tile_layer_e2e4b1e5fc283f0833cf598762781f0b,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -7,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": false,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_524417ddeb7942ec2a2bce3ae564ba9b.addControl(mini_map_0fe284a25d9f3b0179fc2ccd093d7215);
+        
+    
+            var marker_d4e654d91f325c3dba2a6582bbeaf16f = L.marker(
+                [-3.1301766836937137, -60.02340049029022],
+                {
+}
+            ).addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var icon_b6b5501150168cba78452e0c81b7cbe7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "church",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43c76212bc862387a9bab35b90cdf6ec = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_92fb678d7679f7457af531bbc52484ac = $(`<div id="html_92fb678d7679f7457af531bbc52484ac" style="width: 100.0%; height: 100.0%;"><strong>Manaus teater</strong><br><imgsrc="https://lh5.googleusercontent.com/p/AF1QipM_wIwvAy2YHYT1aHdFiV5eTv14EyU51OSdRIO7=w408h271-k-no"alt="Manaus teater" width="150"></div>`)[0];
+                popup_43c76212bc862387a9bab35b90cdf6ec.setContent(html_92fb678d7679f7457af531bbc52484ac);
+            
+        
+
+        marker_d4e654d91f325c3dba2a6582bbeaf16f.bindPopup(popup_43c76212bc862387a9bab35b90cdf6ec)
+        ;
+
+        
+    
+    
+            marker_d4e654d91f325c3dba2a6582bbeaf16f.bindTooltip(
+                `<div>
+                     Manaus teater
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d4e654d91f325c3dba2a6582bbeaf16f.setIcon(icon_b6b5501150168cba78452e0c81b7cbe7);
+            
+    
+            var marker_3144ee51135cc2bec11d7e8f46b6ce39 = L.marker(
+                [-3.0327694203954794, -60.132860744341016],
+                {
+}
+            ).addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var icon_a92b56667e26cb92d4f64783ce0ce6a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "umbrella",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc12ac66add419a285f6115aa91b59e8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ccebdbb6147e9b954d159e3e54b13c63 = $(`<div id="html_ccebdbb6147e9b954d159e3e54b13c63" style="width: 100.0%; height: 100.0%;"><strong>Moon Beach</strong><br><imgsrc="https://lh5.googleusercontent.com/p/AF1QipOJHfhvspTgy56sr1pInhBAJHfplRPqMfM3c3p=w426-h240-k-no"alt="Moon Beach" width="150"></div>`)[0];
+                popup_bc12ac66add419a285f6115aa91b59e8.setContent(html_ccebdbb6147e9b954d159e3e54b13c63);
+            
+        
+
+        marker_3144ee51135cc2bec11d7e8f46b6ce39.bindPopup(popup_bc12ac66add419a285f6115aa91b59e8)
+        ;
+
+        
+    
+    
+            marker_3144ee51135cc2bec11d7e8f46b6ce39.bindTooltip(
+                `<div>
+                     Moon Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3144ee51135cc2bec11d7e8f46b6ce39.setIcon(icon_a92b56667e26cb92d4f64783ce0ce6a2);
+            
+    
+            tile_layer_40a1821292a3ff710d5f2748396e1515.addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+                marker_6c1b29a5a3891678f041ee3e0f063540.setIcon(beautify_icon_a2776e6c5193e35e12579f3e5f0b0e62);
+            
+    
+                marker_e934090c8b2ce9643acc710e701737c6.setIcon(div_icon_b9a439743329d1171244ba3b2669ed8b);
+            
+    
+                marker_d4e654d91f325c3dba2a6582bbeaf16f.setIcon(icon_b6b5501150168cba78452e0c81b7cbe7);
+            
+    
+                marker_3144ee51135cc2bec11d7e8f46b6ce39.setIcon(icon_a92b56667e26cb92d4f64783ce0ce6a2);
+            
+    
+            var marker_28787473097c32cc2982705fb201cb06 = L.marker(
+                [-3.1301766836937137, -60.02340049029022],
+                {
+}
+            ).addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var icon_140dd537fc6edd3b3f26a6bf213e2506 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "church",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc1612d43dcd3ea5bbf311f60c657cab = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_36a9d6bff1f6d205b0f6c00c9dba0b31 = $(`<div id="html_36a9d6bff1f6d205b0f6c00c9dba0b31" style="width: 100.0%; height: 100.0%;"><strong>Manaus teater</strong><br><imgsrc="https://lh5.googleusercontent.com/p/AF1QipM_wIwvAy2YHYT1aHdFiV5eTv14EyU51OSdRIO7=w408h271-k-no"alt="Manaus teater" width="150"></div>`)[0];
+                popup_fc1612d43dcd3ea5bbf311f60c657cab.setContent(html_36a9d6bff1f6d205b0f6c00c9dba0b31);
+            
+        
+
+        marker_28787473097c32cc2982705fb201cb06.bindPopup(popup_fc1612d43dcd3ea5bbf311f60c657cab)
+        ;
+
+        
+    
+    
+            marker_28787473097c32cc2982705fb201cb06.bindTooltip(
+                `<div>
+                     Manaus teater
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_28787473097c32cc2982705fb201cb06.setIcon(icon_140dd537fc6edd3b3f26a6bf213e2506);
+            
+    
+            var marker_593b6b33dfcea746f0d94225f092c3f4 = L.marker(
+                [-3.0327694203954794, -60.132860744341016],
+                {
+}
+            ).addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var icon_1b70f83ed77fbd80bdeb3a451fdc9cc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "umbrella",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b943837b1ca8adcfe51230aab633afe4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_50e0c804cd3cbd5c7adf717677a68e71 = $(`<div id="html_50e0c804cd3cbd5c7adf717677a68e71" style="width: 100.0%; height: 100.0%;"><strong>Moon Beach</strong><br><imgsrc="https://lh5.googleusercontent.com/p/AF1QipOJHfhvspTgy56sr1pInhBAJHfplRPqMfM3c3p=w426-h240-k-no"alt="Moon Beach" width="150"></div>`)[0];
+                popup_b943837b1ca8adcfe51230aab633afe4.setContent(html_50e0c804cd3cbd5c7adf717677a68e71);
+            
+        
+
+        marker_593b6b33dfcea746f0d94225f092c3f4.bindPopup(popup_b943837b1ca8adcfe51230aab633afe4)
+        ;
+
+        
+    
+    
+            marker_593b6b33dfcea746f0d94225f092c3f4.bindTooltip(
+                `<div>
+                     Moon Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_593b6b33dfcea746f0d94225f092c3f4.setIcon(icon_1b70f83ed77fbd80bdeb3a451fdc9cc0);
+            
+    
+            tile_layer_40a1821292a3ff710d5f2748396e1515.addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+                marker_6c1b29a5a3891678f041ee3e0f063540.setIcon(beautify_icon_a2776e6c5193e35e12579f3e5f0b0e62);
+            
+    
+                marker_e934090c8b2ce9643acc710e701737c6.setIcon(div_icon_b9a439743329d1171244ba3b2669ed8b);
+            
+    
+                marker_d4e654d91f325c3dba2a6582bbeaf16f.setIcon(icon_b6b5501150168cba78452e0c81b7cbe7);
+            
+    
+                marker_3144ee51135cc2bec11d7e8f46b6ce39.setIcon(icon_a92b56667e26cb92d4f64783ce0ce6a2);
+            
+    
+                marker_28787473097c32cc2982705fb201cb06.setIcon(icon_140dd537fc6edd3b3f26a6bf213e2506);
+            
+    
+                marker_593b6b33dfcea746f0d94225f092c3f4.setIcon(icon_1b70f83ed77fbd80bdeb3a451fdc9cc0);
+            
+    
+            var marker_a89eeb7f5df84d0acaa599be20dc6763 = L.marker(
+                [-3.1301766836937137, -60.02340049029022],
+                {
+}
+            ).addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var icon_d28698481a74754e672644271ed3d2b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "church",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd1e634464380d4d934456382a400416 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b2a20c5cffec9bcd21b42890d21882e1 = $(`<div id="html_b2a20c5cffec9bcd21b42890d21882e1" style="width: 100.0%; height: 100.0%;"><strong>Manaus teater</strong><br><imgsrc="https://lh5.googleusercontent.com/p/AF1QipM_wIwvAy2YHYT1aHdFiV5eTv14EyU51OSdRIO7=w408h271-k-no"alt="Manaus teater" width="150"></div>`)[0];
+                popup_dd1e634464380d4d934456382a400416.setContent(html_b2a20c5cffec9bcd21b42890d21882e1);
+            
+        
+
+        marker_a89eeb7f5df84d0acaa599be20dc6763.bindPopup(popup_dd1e634464380d4d934456382a400416)
+        ;
+
+        
+    
+    
+            marker_a89eeb7f5df84d0acaa599be20dc6763.bindTooltip(
+                `<div>
+                     Manaus teater
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a89eeb7f5df84d0acaa599be20dc6763.setIcon(icon_d28698481a74754e672644271ed3d2b8);
+            
+    
+            var marker_28112c4007a9bb3b44aea3c6e56be32f = L.marker(
+                [-3.0327694203954794, -60.132860744341016],
+                {
+}
+            ).addTo(map_524417ddeb7942ec2a2bce3ae564ba9b);
+        
+    
+            var icon_6562bb286d409dd8ea19c66333ec2312 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "umbrella",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56b71e8179218cce55cedc7fe0703b69 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_29a4ab048c2c3617be7d3dbb9f9bf639 = $(`<div id="html_29a4ab048c2c3617be7d3dbb9f9bf639" style="width: 100.0%; height: 100.0%;"><strong>Moon Beach</strong><br><imgsrc="https://lh5.googleusercontent.com/p/AF1QipOJHfhvspTgy56sr1pInhBAJHfplRPqMfM3c3p=w426-h240-k-no"alt="Moon Beach" width="150"></div>`)[0];
+                popup_56b71e8179218cce55cedc7fe0703b69.setContent(html_29a4ab048c2c3617be7d3dbb9f9bf639);
+            
+        
+
+        marker_28112c4007a9bb3b44aea3c6e56be32f.bindPopup(popup_56b71e8179218cce55cedc7fe0703b69)
+        ;
+
+        
+    
+    
+            marker_28112c4007a9bb3b44aea3c6e56be32f.bindTooltip(
+                `<div>
+                     Moon Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_28112c4007a9bb3b44aea3c6e56be32f.setIcon(icon_6562bb286d409dd8ea19c66333ec2312);
+            
+</script>
+</html>
